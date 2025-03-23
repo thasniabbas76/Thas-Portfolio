@@ -1,0 +1,48 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Virtual Environment
+venv/
+env/
+*.env
+
+# Django-specific
+db.sqlite3
+/media/
+staticfiles/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & Debugging Files
+*.log
+logs/
+debug.log
+
+# Compiled code & cache
+*.egg-info/
+*.pytest_cache/
+node_modules/
+desktop.ini
+# OS-specific files
+.DS_Store
+Thumbs.db
+# Ignore all parent directory files
+../*
+
+# Allow only the Portfolio directory
+!/Portfolio/"*/OneDrive/*" 
+"*/AppData/*" 
+"__pycache__/" 
+"node_modules/" 
+".vscode/" 
+".DS_Store" 
+"NTUSER.*" 
+"desktop.ini" 

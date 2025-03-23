@@ -1,0 +1,509 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Thasni</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{%static 'media/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'media/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'media/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'media/site.webmanifest' %}">
+</head>
+
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="#">Thasni.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="#" class="home-link">Thasni.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#works" class="smoothscroll">Works</a></li>
+                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Hello World
+                        </div>
+
+                        <h1 class="text-huge-title">
+                            I am Thasni, <br>
+                            a Python Django <br>
+                            & React <br> 
+                            developer.
+                        </h1>
+                    </div>
+
+                    <ul class="intro-social">
+                        <li><a href="https://www.github.com/thasniabbas76/">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/thasniabbas">LinkedIn</a></li>
+                        <li><a href="https://leetcode.com/u/thasni_abbas/">Leetcode</a></li>
+                        <li><a href="https://www.instagram.com/_cosmic_.eye___/?hl=en">Instagram</a></li>
+                    </ul>
+
+                </div> <!-- end intro content -->
+
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                </a>
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- ### about
+            ================================================== -->
+            <section id="about" class="s-about target-section">
+
+
+                <div class="row about-info wide" data-animate-block>
+
+                    <div class="column lg-6 md-12 about-info__pic-block">
+                        <img src="{% static 'images/about-photo3.jpg' %}" 
+                             srcset="{% static 'images/about-photo3.jpg' %} 1x, {% static 'images/about-photo3@2x.jpg' %} 2x" alt="" class="about-info__pic" data-animate-el>
+                    </div>
+
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text" >
+
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                About
+                            </h2>
+                            <p class="attention-getter" data-animate-el>
+                                Hello, I’m a Python Django Developer 
+                                passionate about building fast and 
+                                scalable web applications. With expertise 
+                                in backend development, APIs, and database management, 
+                                I create efficient solutions that enhance user experience. 
+                                I love solving problems, learning new technologies, 
+                                and turning ideas into reality through clean and maintainable code. 🚀
+                            </p>
+                            <a href="{% static 'docs/THASNI_ABBAS.pdf' %}" class="btn btn--medium u-fullwidth" data-animate-el download>Download CV</a>
+
+                        </div>
+                    </div>
+                </div> <!-- about-info -->
+
+
+                
+                <!-- ### works
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+
+
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Works
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Here are some of my favorite projects I have done lately. Feel free to check them out.
+                        </p>
+    
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{% static 'images/portfolio/furni1.jpg' %}"
+                                             srcset="{% static 'images/portfolio/furni1.jpg' %} 1x, {%static 'images/portfolio/furni1@2x.jpg' %} 2x"  alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Furni.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+                            
+                            
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{% static 'images/portfolio/contact.jpg' %}" 
+                                             srcset="{% static 'images/portfolio/contact.jpg' %} 1x, {%static 'images/portfolio/contact@2x.jpg' %} 2x" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Contact Management
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Contact Book.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{% static 'images/portfolio/cafeesa.jpg' %}" 
+                                             srcset="{%static 'images/portfolio/cafeesa.jpg' %} 1x, {% static 'images/portfolio/cafeesa@2x.jpg' %} 2x" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Cafeesa.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    <div class="folio-list__item-pic">
+                                        <img src="{% static 'images/portfolio/starbucks1.jpg' %}"
+                                             srcset="{% static 'images/portfolio/starbucks1.jpg' %} 1x, {% static 'images/portfolio/starbucks1@2x.jpg' %} 2x" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Starbucks - Clone.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                        </ul> <!-- end folio-list -->
+
+                    </div> <!-- end column -->
+                    
+                    <div class="row about-expertise" data-animate-block>
+                        <div class="column lg-12">
+    
+                            <h2 class="text-pretitle" data-animate-el>Expertise</h2>
+    
+                            <ul class="skills-list h1" data-animate-el>
+                                <li>Backend Development</li>
+                                <li>Frontend Development</li>
+                                <li>Database Management</li>
+                                <li>RESTful APIs</li>
+                            </ul>
+    
+                        </div>
+                    </div> <!-- end about-expertise -->
+
+                <div class="row about-timelines" data-animate-block>
+
+                    <div class="column lg-6 tab-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            AWARDS & CERTIFIEDS
+                        </h2>
+
+                        <div class="timeline" data-animate-el>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Hackathon Participant</h3>
+                                    <h5 class="timeline__meta">TinkHer Day</h5>
+                                    <p class="timeline__timeframe">January 2025</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Successfully developed and deployed multiple web applications, showcasing expertise in
+                                        rapid prototyping and efficient coding practices.
+                                        Recognized for exceptional adaptability and debugging skills during live project
+                                        challenges, ensuring seamless functionality under pressure.</p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Python Certification</h4>
+                                    <h5 class="timeline__meta">HackerRank</h5>
+                                    <p class="timeline__timeframe">May 2024</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>It covers topics like Scalar Types, Operators and Control Flow, Strings, 
+                                        Collections and Iteration, Modularity, Objects and Types and Classes.
+                                        Python Programming, Problem Solving, Algorithms, Data Structures.
+                                    </p>
+                                    <a href="https://www.hackerrank.com/certificates/6658519cad8d" 
+                                    >Certificate</a>
+
+                                </div>
+                            </div>
+                            
+    
+                        </div> <!-- end timeline -->
+
+                    </div> <!-- end column -->
+
+                    <div class="column lg-6 tab-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Education
+                        </h2>
+
+                        <div class="timeline" data-animate-el>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Brototype</h3>
+                                    <h5 class="timeline__meta">Web Development using Python Django + React </h5>
+                                    <p class="timeline__timeframe">2023</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Successfully designed and deployed multiple web applications, showcasing development expertise.
+                                        Contributed to a high-impact solution that highlighted creativity and
+                                        technical proficiency in a competitive environment.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">MES Kalladi College Mannarkkad</h4>
+                                    <h5 class="timeline__meta">BA Mass Communication & Journalism</h5>
+                                    <p class="timeline__timeframe">2019</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>I developed strong skills in creativity, leadership, and communication. 
+                                        This foundation helps me collaborate effectively, 
+                                        and bring a user-focused approach to tech and software development.</p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end column -->
+
+
+                </div> <!-- end about-timelines -->
+
+            </section> <!-- end s-about -->
+
+
+                    <!-- Modal Templates Popup
+                    -------------------------------------------- -->
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                            <img src="{% static 'images/portfolio/furni1.jpg' %}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Furni. - E-commerce Web Application</h5>
+                                <p>Furni is a Django-based e-commerce platform with 500+ products, 1000+ users, and optimized performance for smooth transactions.</p>
+                                <ul class="modal-popup__cat">
+                                    <li><strong>Tech Stack:</strong> Python, Django, PostgreSQL, HTML, CSS, Bootstrap, AWS</li>
+                                    <li><strong>Features:</strong> User authentication, order processing, RESTful APIs</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/thasniabbas76/Furni.-" class="modal-popup__details">Github</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <img src="{% static 'images/portfolio/contact.jpg' %}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Contact Book</h5>
+                                <p>A contact management system managing 500+ contacts efficiently using
+                                    Python and Django - Built in a Hackathon.</p>
+                                <ul class="modal-popup__cat">
+                                    <li><strong>Tech Stack:</strong> Python, Django, PostgreSQL, HTML, CSS3, Bootstrap</li>
+                                    <li><strong>Features:</strong> Add, Delete, Search</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/thasniabbas76/tink-her-hack-3-temp1" class="modal-popup__details">Github</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <img src="{% static 'images/portfolio/cafeesa.jpg' %}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Cafeesa - Clone Website</h5>
+                                <p>Completely responsive website, ensuring seamless browsing across all devices.
+                                    </p>
+                                <ul class="modal-popup__cat">
+                                    <li><strong>Tech Stack:</strong> Python, Django, PostgreSQL, HTML, CSS3, Bootstrap, Github</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/thasniabbas76/cafeesa" class="modal-popup__details">Github</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-04" hidden>
+                        <div class="modal-popup">
+                            <img src="{% static 'images/portfolio/starbucks1.jpg' %}" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Starbucks - Clone.</h5>
+                                <p>Created a fully responsive replica of the Starbucks homepage with 100% mobile and
+                                    desktop compatibility.
+                                    </p>
+                                <ul class="modal-popup__cat">
+                                    <li><strong>Tech Stack:</strong> HTML, CSS3, Bootstrap, Github</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/thasniabbas76/starbucks" class="modal-popup__details">Github</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    
+                </div> <!-- end works-portfolio -->
+
+
+            </section> <!-- end s-works -->
+
+
+            <!-- ### contact
+            ================================================== -->
+            <section id="contact" class="s-contact target-section">
+
+                <div class="row contact-top">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">
+                            Get In Touch
+                        </h2>
+
+                        <p class="h1">
+                            I love to hear from you.
+                            Whether you have a question or just 
+                            want to chat about tech — shoot me a message.
+                        </p>
+                    </div>
+                </div> <!-- end contact-top -->
+
+                <div class="row contact-bottom">
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Reach me at</h3>
+                        <p class="contact-links">
+                            <a href="mailto:thasniabbas76@gmail.com" class="mailtoui">thasniabbas76@gmail.com</a> <br>
+                            <a href="tel:+917902802605">+917902802605</a>
+                        </p>
+                    </div>
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Social</h3>
+                        <ul class="contact-social">
+                            <li><a href="https://www.linkedin.com/in/thasniabbas">LinkedIn</a></li>
+                            <li><a href="https://leetcode.com/u/thasni_abbas/">Leetcode</a></li>
+                            <li><a href="https://www.instagram.com/_cosmic_.eye___/?hl=en">Instagram</a></li>
+                            <li><a href="https://www.github.com/thasniabbas76/">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="column lg-4 md-12 contact-block">
+                        <a href="mailto:thasniabbas76@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
+                    </div>
+                </div> <!-- end contact-bottom -->
+
+            </section> <!-- end contact -->
+
+        </main> <!-- end s-content -->
+
+
+        <!-- ## footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>© Copyright Thasni</span> 
+                    <span>Design by <a href="#">Me</a> Distribution By <a href="#">Thas.</a></span>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
